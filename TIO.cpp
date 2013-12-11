@@ -35,13 +35,12 @@ int __fastcall TIOCaptions::GetIndex(const AnsiString Caption)
 AnsiString __fastcall TIOCaption::GetCaption(const eLanguage Language)
 {
 	switch (Language) {
-	case Chinese :
-		return ChineseCaption;
-		break;
+;
 	case English :
 		return EnglishCaption;
 		break;
-	default:
+	case Chinese :
+		break	default:
 		return ChineseCaption;
 	};
 }
